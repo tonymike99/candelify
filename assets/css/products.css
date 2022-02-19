@@ -1,0 +1,63 @@
+/* STYLESHEETS IMPORT */
+
+@import url('/assets/css/styles-reset.css');
+@import url('/assets/css/styles-common.css');
+
+/* **************************************************************************************************** */
+
+/* COMMON STYLES MODIFICATION START */
+
+.main-container {
+    grid-template-areas:
+        'header header header header header'
+        'aside main main main main'
+        'aside main main main main'
+        'aside main main main main'
+        'footer footer footer footer footer';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr repeat(3, 1fr) 0.6fr;
+}
+
+.aside {
+    justify-content: unset;
+    align-items: unset;
+    padding: 2rem;
+}
+
+/* COMMON STYLES MODIFICATION END */
+
+/* **************************************************************************************************** */
+
+/* PAGE SPECIFIC STYLES START */
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-price-labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-price,
+.filter-category,
+.filter-rating,
+.filter-sort {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cards-landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* PAGE SPECIFIC STYLES END */
+
+/* **************************************************************************************************** */
