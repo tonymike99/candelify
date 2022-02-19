@@ -1,0 +1,288 @@
+/* TEMPORARY */
+
+@import url('/assets/css/_add-to-cl.css');
+
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap');
+
+/* **************************************************************************************************** */
+
+/* COLORS */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --muted-color: #6c757d;
+
+    --primary-hover: #0b5ed7;
+    --secondary-hover: #5c636a;
+    --success-hover: #157347;
+    --danger-hover: #bb2d3b;
+    --warning-hover: #ffca2c;
+    --info-hover: #31d2f2;
+    --light-hover: #f9fafb;
+    --dark-hover: #1c1f23;
+
+    --link-hover-bg: #36096d;
+    --default-bg: yellowgreen;
+}
+
+/* **************************************************************************************************** */
+
+/* THEME */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.light-theme {
+    background-color: var(--default-bg);
+    color: var(--dark-color);
+}
+
+.dark-theme {
+    background-color: var(--link-hover-bg);
+    color: var(--light-color);
+}
+
+/* **************************************************************************************************** */
+
+/* BODY STYLES START */
+
+.main-container {
+    display: grid;
+}
+
+/* BODY STYLES END */
+
+/* **************************************************************************************************** */
+
+/* HEADER STYLES START */
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    /* border-bottom: 2px solid black; */
+}
+
+.brand-name {
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: none;
+    background-color: var(--link-hover-bg);
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 80%);
+    padding: 0.5rem;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-item {
+    margin: 1rem;
+}
+
+.list-navbar {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem !important;
+}
+
+/* HEADER STYLES END */
+
+/* **************************************************************************************************** */
+
+/* MAIN STYLES START */
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MAIN STYLES END */
+
+/* **************************************************************************************************** */
+
+/* ASIDE STYLES START */
+
+.aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    /* border-right: 2px solid black; */
+}
+
+.list-sidebar {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 2.5rem !important;
+}
+
+.main-link {
+    font-size: 2rem;
+}
+
+.sub-link {
+    font-weight: unset;
+}
+
+/* ASIDE STYLES END */
+
+/* **************************************************************************************************** */
+
+/* FOOTER STYLES START */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.my-name {
+    font-family: 'Italianno', cursive;
+    font-size: 4rem;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* FOOTER STYLES END */
+
+/* **************************************************************************************************** */
+
+/* OTHER CLASS STYLES START */
+
+.hr-thin {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 0;
+    width: 90%;
+}
+
+.styled-link,
+.styled-link-2 {
+    color: inherit;
+}
+
+.styled-link:hover,
+.styled-link-2 > i:hover {
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 80%);
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* OTHER CLASS STYLES END */
+
+/* **************************************************************************************************** */
+
+/* DIRECT TAG STYLES START */
+
+a {
+    text-decoration: none;
+}
+
+iframe {
+    height: 100% !important;
+    margin-bottom: 5rem;
+    max-height: 20rem;
+    overflow: scroll;
+    overflow-x: scroll;
+    width: 100% !important;
+}
+
+i {
+    padding: 0.5rem;
+}
+
+/* DIRECT TAG STYLES END */
+
+/* **************************************************************************************************** */
+
+/* PROJECT SPECIFIC COMMON STYLES START */
+
+.cards-portrait,
+.cards-landscape {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.badge-outside-top-right {
+    top: -15% !important;
+    right: -15% !important;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchbar {
+    width: 25rem !important;
+}
+
+.login-signup-section {
+    width: 20%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.form-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* PROJECT SPECIFIC COMMON STYLES END */
+
+/* **************************************************************************************************** */
