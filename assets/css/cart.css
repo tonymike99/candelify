@@ -1,0 +1,48 @@
+/* STYLESHEETS IMPORT */
+
+@import url('/assets/css/styles-reset.css');
+@import url('/assets/css/styles-common.css');
+
+/* **************************************************************************************************** */
+
+/* COMMON STYLES MODIFICATION START */
+
+.main-container {
+    grid-template-areas:
+        'header header header header header'
+        'main main main main aside'
+        'main main main main aside'
+        'main main main main aside'
+        'footer footer footer footer footer';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr repeat(3, 1fr) 0.6fr;
+}
+
+.aside {
+    justify-content: unset;
+    align-items: unset;
+    padding: 2rem;
+}
+
+.main {
+    justify-content: unset;
+    align-items: unset;
+}
+
+/* COMMON STYLES MODIFICATION END */
+
+/* **************************************************************************************************** */
+
+/* PAGE SPECIFIC STYLES START */
+
+.total-price,
+.total-discount,
+.delivery-charges,
+.effective-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PAGE SPECIFIC STYLES END */
+
+/* **************************************************************************************************** */
