@@ -181,6 +181,34 @@ body {
     gap: 1.5rem;
 }
 
+.footer-heart-icon {
+    color: red;
+}
+
+.footer-code-icon {
+    color: #15aabf;
+}
+
+.footer-github-icon {
+    color: var(--light-color);
+}
+
+.footer-linkedin-icon {
+    border-radius: 2px;
+    margin: 0;
+    padding: 4px 4px;
+    color: var(--light-color);
+    background-color: #0a66c2;
+}
+
+.footer-twitter-icon {
+    color: #5aa4d6;
+}
+
+.footer-email-icon {
+    color: var(--light-color);
+}
+
 /* FOOTER STYLES END */
 
 /* **************************************************************************************************** */

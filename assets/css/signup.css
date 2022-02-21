@@ -28,3 +28,49 @@
 /* PAGE SPECIFIC STYLES END */
 
 /* **************************************************************************************************** */
+
+/* MEDIA QUERIES START */
+
+@media only screen and (max-width: 1200px) {
+    .login-signup-section {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        grid-template-rows: 0.6fr repeat(3, 2fr) 1.2fr;
+    }
+
+    .header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-signup-section {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main-container {
+        grid-template-rows: 0.6fr repeat(3, 1fr) 0.6fr;
+        max-height: unset;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .login-signup-section {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .login-signup-section {
+        width: 80%;
+    }
+}
+
+/* MEDIA QUERIES END */
+
+/* **************************************************************************************************** */
